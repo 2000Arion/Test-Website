@@ -11,4 +11,4 @@ You want to see the current finished version? Check out [test.arion2000.xyz](tes
 
 If you have any questions, let me know.
 
-[➡️Information about hosting the website test.arion2000.xyz.](/hosting-information "Click to be redirected")
+[➡️Information about hosting the website test.arion2000.xyz.](Test-Website/hosting-information "Click to be redirected")
