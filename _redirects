@@ -1,0 +1,4 @@
+---
+filename: _redirects
+---
+/ /home 301
