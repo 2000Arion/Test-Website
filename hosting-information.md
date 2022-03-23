@@ -12,5 +12,6 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 ## *Not finished yet :(*
+[Information about the current build](https://2000arion.github.io/Test-Website/releases/tag/1)
 
 ##### [Go back to the homepage.](/Test-Website "Click to be redirected")
