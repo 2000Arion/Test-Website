@@ -23,11 +23,11 @@ function reset() {
     } else if (getParameter("format") == null) {
         console.warn('This may not be executed here!')
     } else {
-        window.location.replace("/upt");
+        window.location.replace("/projects/urlparametertesting");
     }
 }
 function finishreset() {
-    window.location.replace("/upt")
+    window.location.replace("/projects/urlparametertesting")
 }
 
 // Start of Tawk.to Script \\
