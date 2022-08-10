@@ -1,0 +1,16 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0F172A;
+    color: white;
+    padding-top: 30px;
+    padding-left: 120px;
+}
+
+.imgtextcenter {
+    display: flex;
+    align-items: center;
+}
+
+.imgtextcenter svg {
+    margin-right: 8px;
+}

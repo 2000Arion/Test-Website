@@ -2,6 +2,8 @@
 <html lang="de">
 
 <head>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -11,109 +13,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>arion2000.xyz - Web-Testing</title>
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            color: #ffffff;
-            background: #fff url(/_uploads/images/backgrounds/jpg/homepage_bg.jpg) center top/cover no-repeat;
-            padding-left: 40px;
-            padding-top: 3px;
-            height: 100vh;
-        }
-
-        .imgtextcenter {
-            display: flex;
-            align-items: center;
-        }
-
-        .imgtextcenter svg {
-            margin-right: 1px;
-        }
-
-        /* Center the loader */
-        #loader {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            z-index: 1;
-            width: 120px;
-            height: 120px;
-            margin: -76px 0 0 -76px;
-            border: 16px solid #f3f3f3;
-            border-radius: 50%;
-            border-top: 16px solid #3498db;
-            -webkit-animation: spin 2s linear infinite;
-            animation: spin 2s linear infinite;
-        }
-
-        @-webkit-keyframes spin {
-            0% {
-                -webkit-transform: rotate(0deg);
-            }
-
-            100% {
-                -webkit-transform: rotate(360deg);
-            }
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* Add animation to "page content" */
-        .animate-bottom {
-            position: relative;
-            -webkit-animation-name: animatebottom;
-            -webkit-animation-duration: 1s;
-            animation-name: animatebottom;
-            animation-duration: 1s
-        }
-
-        @-webkit-keyframes animatebottom {
-            from {
-                bottom: -100px;
-                opacity: 0
-            }
-
-            to {
-                bottom: 0px;
-                opacity: 1
-            }
-        }
-
-        @keyframes animatebottom {
-            from {
-                bottom: -100px;
-                opacity: 0
-            }
-
-            to {
-                bottom: 0;
-                opacity: 1
-            }
-        }
-    </style>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
-            Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/61e29fcdf7cf527e84d24447/1fpek0fbh';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
 </head>
 
 <body a link="#d3d3d3" vlink="#d3d3d3" onload="load()" style="margin:0;">
@@ -130,19 +29,5 @@
         </svg><b>von Arion2000 <a href="http://r.arion2000.xyz/github">(2000Arion)</b><a></p>
     <br>
     <h2 class="animate-bottom"><a href="information.html" style="text-decoration: none;">➡️ Mehr Informationen<a></h2>
-
-    <script>
-        var myVar;
-
-        function load() {
-            myVar = setTimeout(showPage);
-        }
-
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        }
-    </script>
 </body>
-
 </html>
