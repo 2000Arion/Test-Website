@@ -19,10 +19,14 @@
   <div style="display: none" id="Div" class="animate-bottom">
     <h5 id="test"><a style="text-decoration: none" href="?format=1">Hallo! Klick das hier mal an.</a></h5>
     <br>
-    <h6 style="color: red;cursor:pointer" onclick="reset()">Reset</h6>
+    <h6 id="reset" style="color: red;cursor:pointer" onclick="reset()">Reset</h6>
   </div>
 
   <script>
+    if (getParameter("format") == null) {
+      let html = '<a style="color:gray;cursor:not-allowed;">Reset</a>';
+      document.getElementById("reset").innerHTML = html;
+    }
     if (getParameter("format") == "1") {
       let html =
         '<a id="test" style="text-decoration:none;" href="?format=2"><b>Hallo!</b> Klick doch nochmal :)</a>';
@@ -35,6 +39,10 @@
     }
     if (getParameter("format") == "3") {
       let html = "Och nee.. jetzt hör bitte wirklich auf...</a>";
+      document.getElementById("test").innerHTML = html;
+    }
+    if (getParameter("finish") == "true") {
+      let html = '<a style="color:green;">Du hast es geschafft</a>!! Ohne, dass eine negative Nachricht aufgetaucht ist! Gut gemacht!';
       document.getElementById("test").innerHTML = html;
     }
   </script>

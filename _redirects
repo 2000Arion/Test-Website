@@ -3,3 +3,4 @@
 /uvt /projects/urlparametertesting 301
 /projects/upt /projects/urlparametertesting 301
 /projects/uvt /projects/urlparametertesting 301
+/projects/urlparametertesting/?finish=false /projects/urlparametertesting/?format=3 301
