@@ -17,12 +17,27 @@
 <body a link="black" vlink="black" onload="load()" style="margin: 0">
   <div id="loader"></div>
   <div style="display: none" id="Div" class="animate-bottom">
-    <h5 id="test">
-      <a style="text-decoration: none" href="?format=b">
-        Hallo! Klick das hier mal an.</a>
-    </h5>
+    <h5 id="test"><a style="text-decoration: none" href="?format=1">Hallo! Klick das hier mal an.</a></h5>
     <br>
     <h6 style="color: red;cursor:pointer" onclick="reset()">Reset</h6>
   </div>
+
+  <script>
+    if (getParameter("format") == "1") {
+      let html =
+        '<a id="test" style="text-decoration:none;" href="?format=2"><b>Hallo!</b> Klick doch nochmal :)</a>';
+      document.getElementById("test").innerHTML = html;
+    }
+    if (getParameter("format") == "2") {
+      let html =
+        '<a style="text-decoration:none;" href="?format=3"><b>Hallo!</b> <i>Bitte klick <b>nicht</b> nochmal...</i></a>';
+      document.getElementById("test").innerHTML = html;
+    }
+    if (getParameter("format") == "3") {
+      let html = "Och nee.. jetzt hör bitte wirklich auf...</a>";
+      document.getElementById("test").innerHTML = html;
+    }
+  </script>
 </body>
+
 </html>

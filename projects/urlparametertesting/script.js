@@ -13,9 +13,11 @@ function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("Div").style.display = "block";
 }
+
+
 if (getParameter("format") == "b") {
     let html =
-        '<a style="text-decoration:none;" href="?format=i"><b>Hallo!</b> Klick doch nochmal :)</a>';
+        '<a id="test" style="text-decoration:none;" href="?format=i"><b>Hallo!</b> Klick doch nochmal :)</a>';
     document.getElementById("test").innerHTML = html;
 }
 if (getParameter("format") == "i") {
@@ -29,5 +31,5 @@ if (getParameter("format") == "c") {
 }
 
 function reset() {
-    window.location.replace("/");
+    window.location.replace("/projects/urlparametertesting");
 }
