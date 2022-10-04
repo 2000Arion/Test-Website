@@ -16,7 +16,7 @@ function showPage() {
 
 function reset() {
     if (getParameter("format") == 2) {
-        let html = '<a style="text-decoration:none;cursor:pointer;color:blue;"> Vielen Dank fürs Abbrechen als du darum gebeten wurdest! Als Belohnung darfs du nun auch auf den oberen Text klicken.</a>';
+        let html = '<a style="text-decoration:none;cursor:pointer;color:blue;"> Vielen Dank fürs Abbrechen als du darum gebeten wurdest! Als Belohnung darfst du nun auch auf den oberen Text klicken.</a>';
         document.getElementById("reset").innerHTML = html;
         let html2 = '<a style="text-decoration:none;" href="?format=0&finish=true">Klick auf diesen Knopf! :)';
         document.getElementById("test").innerHTML = html2;
