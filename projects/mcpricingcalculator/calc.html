@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server Hosting Preisrechner - arion2000.xyz</title>
+    <link rel="stylesheet" href="018be774-74f7-79af-995c-2ced62af2804.min.css">
+</head>
+
+<body>
+
+    <div id="calculator">
+        <h2>Minecraft Server Hosting Preisrechner</h2>
+
+        <div id="category-dropdown">
+            <label for="category">Kategorie auswählen:</label>
+            <select id="category" onchange="populateServers(); calculatePrice();">
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+                <option value="dedicated">Dedicated</option>
+            </select>
+        </div>
+
+        <div id="duration-dropdown">
+            <label for="duration">Laufzeit auswählen:</label>
+            <select id="duration" onchange="setDuration(this.value);">
+                <option value="3">3 Tage</option>
+                <option value="30">30 Tage</option>
+                <option value="90">90 Tage</option>
+                <option value="180">180 Tage</option>
+                <option value="365">365 Tage</option>
+            </select>
+        </div>
+
+        <br>
+
+        <table id="server-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>vCPU</th>
+                    <th>RAM (GB)</th>
+                    <th>NVMe SSD (GB)</th>
+                    <th>Monatlicher Preis (€)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Servers will be added dynamically using JavaScript -->
+            </tbody>
+        </table>
+
+        <div id="price-display">
+            <p><strong>Preisübersicht:</strong></p>
+            <p>Grundpreis: <span id="monthly-price">0.00</span> €</p>
+            <p>USt. (19%): <span id="vat">0.00</span> €</p>
+            <p>Gebüren: <span id="fees">0.00</span> €</p>
+            <p>Preis für <span id="selected-duration">ausgewählte Laufzeit</span>: <span id="total-price">0.00</span> €
+            </p>
+        </div>
+    </div>
+
+    <script src="servers.js"></script>
+    <script src="018be7ab-df09-7791-acb2-c2225546fdf7.min.js"></script>
+
+</body>
+
+</html>

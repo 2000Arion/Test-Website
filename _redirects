@@ -1,5 +1,12 @@
 /index.html / 301
+
 /upt /projects/urlparametertesting 301
 /uvt /projects/urlparametertesting 301
 /projects/upt /projects/urlparametertesting 301
 /projects/uvt /projects/urlparametertesting 301
+
+/mcpc /projects/mcpricingcalculator 301
+/mc /projects/mcpricingcalculator 301
+/projects/mcpc /projects/mcpricingcalculator 301
+/projects/mc /projects/mcpricingcalculator 301
+/mcpricingcalculator /projects/mcpricingcalculator 301
