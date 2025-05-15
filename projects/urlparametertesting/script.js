@@ -33,7 +33,7 @@ function reset() {
     }
 }
 function finishreset() {
-    window.location.replace("/projects/urlparametertesting")
+    window.location.href = "/projects/urlparametertesting";
 }
 
 // Start of Tawk.to Script \\
