@@ -29,7 +29,7 @@ function reset() {
     } else if (getParameter("format") == null) {
         console.warn('This may not be executed here!')
     } else {
-        window.location.replace("/projects/urlparametertesting");
+        window.location.href = "/projects/urlparametertesting";
     }
 }
 function finishreset() {
